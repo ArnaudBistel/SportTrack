@@ -79,7 +79,7 @@
                 $html .= "  <td>" . $activity['distance'] .  "</td>";
                 $html .= "  <td>" . $activity['freqCardiaqueMin'] .  "</td>";
                 $html .= "  <td>" . $activity['freqCardiaqueMax'] .  "</td>";
-                $html .= "  <td>" . $activity['freqCardiaqueMoy'] .  "</td>";
+                $html .= "  <td>" . number_format((float)$activity['freqCardiaqueMoy'], 2, '.', '') .  "</td>";
                 $html .= "</tr>";
             }
         $html .= "</table>
